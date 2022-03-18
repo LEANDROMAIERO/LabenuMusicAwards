@@ -1,4 +1,25 @@
-# Labenu Music Awards
-Como você deve saber muito bem, o nosso querido chefinho Astrodev é uma pessoa com Networking incrível e ele conhece vários artistas estrelados. Além disso, ele também é um grande ~~megalomaníaco~~ visionário e está planejando fazer um grande evento: o **LAMA**, *Labenu Musical Awards*, um festival  com várias bandas famosas para a formatura da sua turma e, no final, vocês podem eleger a banda que mais gostaram! Entretanto, na opinião dele, vocês só serão merecedores se entregarem um sistema impecável que permita o gerenciamento completo desses shows.
+<img align="right" width="400" height="400" src="./lama15">
 
-Para isso já deixamos algumas tabelas prontas para vocês não precisarem se preocupar com a modelagem do banco. Deixamos também um template do projeto já com a estrutura da parte de usuários. Vocês podem usá-las a vontade, mas, se quiser fazer do zero sem esse auxílio, também pode.
+## Projeto LAMA
+
+# Sobre o Projeto - Labenu Music Awards
+
+Projeto de backend realizado em dupla da turma Carver. O  **LAMA**, *Labenu Musical Awards* é um festival  com várias bandas famosas para a formatura da sua turma e, no final, é possível eleger a banda que mais gostaram! É possível realizar o cadastro de usuários, realizar login, cadastrar bandas, visualizar os detalhes sobre as bandas, adicionar um show a um dia e pegar todos os shows de um dado específico.
+
+# 🛠️ﾠTecnologias Utilizadas
+
+- MySQL 
+- Express 
+- Node.js 
+- Knex 
+- Cors 
+- DotEnv 
+- bcrypt 
+- UUID 
+
+## Link
+
+## Desenvolvedores
+
+- Leandro Gino Maiero 
+- Thamires Lippelt Vieira
