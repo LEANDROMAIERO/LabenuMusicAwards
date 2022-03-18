@@ -1,5 +1,5 @@
 import { BandDatabase } from "../data/BandDatabase";
-import { Band, BandInput } from "../model/Band";
+import { Band, BandInputDTO } from "../model/Band";
 import { UserRole } from "../model/User";
 import { Authenticator } from "../services/Authenticator";
 import { IdGenerator } from "../services/IdGenerator";
@@ -7,7 +7,7 @@ import { IdGenerator } from "../services/IdGenerator";
 
 export class BandBusiness{
 
-    signupBand = async (band:BandInput, token:string): Promise<string> => {
+    signupBand = async (band:BandInputDTO, token:string): Promise<string> => {
       try {
 
         const tokenData = new Authenticator().getData(token)
@@ -43,7 +43,7 @@ export class BandBusiness{
       try {
         if(!id)
         {throw new Error("Prencha o ID da Banda")}
-        
+
         const getBand:Band = await new BandDatabase().selectBandById(id)
         return getBand
         

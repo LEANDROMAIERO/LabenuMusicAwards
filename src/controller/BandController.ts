@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { BandBusiness } from "../business/BandBusiness";
-import { BandInput } from "../model/Band";
+import { BandInputDTO } from "../model/Band";
 
 
 export class BandController {
@@ -9,7 +9,7 @@ export class BandController {
         try {
             const token = req.headers.authorization as string
             const { name, music_genre, responsible } = req.body
-            const input: BandInput = {
+            const input: BandInputDTO = {
                 name,
                 music_genre,
                 responsible
