@@ -1,8 +1,9 @@
 import { BaseDatabase } from "./BaseDatabase";
 
 
-const createTables = async () => {
-    await this.getConnection(
+const createTables = async () => BaseDatabase.raw(
+
+
         `
     CREATE TABLE IF NOT EXISTS NOME_TABELA_BANDAS (
         id VARCHAR(255) PRIMARY KEY,
@@ -10,6 +11,8 @@ const createTables = async () => {
         music_genre VARCHAR(255) NOT NULL,
         responsible VARCHAR(255) UNIQUE NOT NULL 
       );
+
+
       CREATE TABLE IF NOT EXISTS NOME_TABELA_SHOWS (
         id VARCHAR(255) PRIMARY KEY,
         week_day VARCHAR(255) NOT NULL,
@@ -18,6 +21,8 @@ const createTables = async () => {
         band_id VARCHAR(255) NOT NULL,
         FOREIGN KEY(band_id) REFERENCES NOME_TABELA_BANDAS(id)
       );
+
+
       CREATE TABLE IF NOT EXISTS NOME_TABELAS_USUÁRIOS (
         id VARCHAR(255) PRIMARY KEY,
         name VARCHAR(255) NOT NULL,
@@ -30,8 +35,8 @@ const createTables = async () => {
         .then(() => {
             console.log("Tabelas criadas com sucesso!")
         })
-        .catch((error: { sqlMessage: any; }) => console.log(error.sqlMessage));
-}
+        .catch((error: any) => console.log(error.sqlMessage || error.message));
+
 
 const closeConnection = () => {
     BaseDatabase.destroyConnection()
