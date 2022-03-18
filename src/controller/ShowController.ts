@@ -8,6 +8,7 @@ import { Authenticator } from "../services/Authenticator";
 import { IdGenerator } from "../services/IdGenerator";
 
 export class ShowController{
+    
     async createShow(req: Request, res: Response){
         try{
 

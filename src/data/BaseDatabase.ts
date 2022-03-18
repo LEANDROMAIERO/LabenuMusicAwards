@@ -3,6 +3,7 @@ import Knex   from "knex";
 
 
 export abstract class BaseDatabase {
+  
     static raw(arg0: string) {
       throw new Error("Method not implemented.");
     }

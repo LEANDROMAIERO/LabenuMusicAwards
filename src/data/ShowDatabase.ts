@@ -3,6 +3,7 @@ import { BaseDatabase } from "./BaseDatabase";
 
 export class ShowDatabase extends BaseDatabase{
     
+    
     private static TABLE_NAME = "NOME_TABELA_SHOWS"
 
     public async createShow(show: Show): Promise<void>{

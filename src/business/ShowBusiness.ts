@@ -14,6 +14,7 @@ export class ShowBusiness {
         private idGenerate: IdGenerator,
         private authenticator: Authenticator
     ){}
+    
 
     async createShow(input: ShowInputDTO, token: string){
         const tokenData = this.authenticator.getData(token)

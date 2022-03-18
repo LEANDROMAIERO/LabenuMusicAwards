@@ -9,6 +9,7 @@ export class Show{
         private endTime: number
     ){}
 
+    
     public getId(): string {
         return this.id
     }

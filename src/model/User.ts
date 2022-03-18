@@ -7,6 +7,7 @@ export class User{
     private role: UserRole
     ){}
 
+    
     getId(){
         return this.id;
     }

@@ -2,6 +2,7 @@ import { Band } from "../model/Band"
 import { BaseDatabase } from "./BaseDatabase"
 
 export class BandDatabase extends BaseDatabase {
+    
     private static TABLE_NAME = "NOME_TABELAS_BANDAS";
 
     public insertBand = async (band:Band) => {

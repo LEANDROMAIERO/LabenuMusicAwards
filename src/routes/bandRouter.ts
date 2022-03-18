@@ -5,4 +5,5 @@ export const bandRouter = express.Router()
 
 const bandController = new BandController()
 
+
 bandRouter.post("/register", bandController.signupBand)

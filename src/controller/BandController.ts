@@ -4,6 +4,7 @@ import { BandInputDTO } from "../model/Band";
 
 
 export class BandController {
+    
 
     signupBand = async (req: Request, res: Response) => {
         try {

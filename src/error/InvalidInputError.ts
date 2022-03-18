@@ -5,3 +5,4 @@ export class InvalidInputError extends BaseError{
         super(message, 417)
     }
 }
+

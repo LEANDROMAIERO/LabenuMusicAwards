@@ -5,3 +5,4 @@ export class ShowError extends BaseError{
         super(message, 403)
     }
 }
+

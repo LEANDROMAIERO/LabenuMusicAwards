@@ -2,6 +2,7 @@ import { BaseDatabase } from "./BaseDatabase";
 
 
 const createTables = async () => BaseDatabase.raw(
+  
 
 
         `
