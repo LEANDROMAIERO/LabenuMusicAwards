@@ -1,6 +1,7 @@
 import { BaseDatabase } from "./BaseDatabase";
 import { User } from "../model/User";
 
+
 export class UserDatabase extends BaseDatabase {
 
   private static TABLE_NAME = "NOME_TABELAS_USUÁRIOS";

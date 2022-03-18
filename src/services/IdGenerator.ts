@@ -5,6 +5,7 @@ export class IdGenerator{
         throw new Error("Method not implemented.");
     }
 
+    
     generate(): string{
         return v4();
     }

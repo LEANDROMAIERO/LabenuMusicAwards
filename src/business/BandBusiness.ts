@@ -34,6 +34,7 @@ export class BandBusiness{
             const message = "Banda cadastrada com Sucesso!"
             return message
 
+            
       } catch (error:any) {
         throw new Error(error.message);
       }
