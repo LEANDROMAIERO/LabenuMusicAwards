@@ -7,3 +7,4 @@ const bandController = new BandController()
 
 
 bandRouter.post("/register", bandController.signupBand)
+bandRouter.get("/:id", bandController.getBandById)

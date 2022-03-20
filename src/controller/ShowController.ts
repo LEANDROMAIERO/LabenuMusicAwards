@@ -38,4 +38,14 @@ export class ShowController{
             await BaseDatabase.destroyConnection()
         }
     }
+
+    getShowsByDay = async (req: Request, res: Response) => {
+        try {
+            const {week_day} = req.params
+           
+                res.status(201).send({})
+        } catch (error: any) {
+            res.status(400).send(error.message);
+        }
+    }
 }
